@@ -1,4 +1,3 @@
-pipeline {
  node {
     checkout scm
 
@@ -9,6 +8,4 @@ pipeline {
         /* Push the container to the custom Registry */
         customImage.push()
     }
-}
-
 }
